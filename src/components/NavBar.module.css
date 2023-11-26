@@ -1,0 +1,95 @@
+.nav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-right: 100px;
+  margin-left: 50px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  color: rgb(245, 250, 249);
+  font-size: 1.4rem;
+  transition: 0.5s;
+}
+
+.nav a {
+  display: inline-block;
+  position: relative;
+  color: #8eacac;
+  padding-top: 12px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #e6ebec;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  height: 3px;
+}
+
+.nav li {
+  background-color: rgb(140, 145, 140);
+  height: 50px;
+  width: 180px;
+  display: block;
+  text-align: center;
+  border-radius: 25px;
+  transition: 0.2s;
+}
+.nav li:hover {
+  background-color: #2b2c2c;
+}
+
+.nav li:hover {
+  background-color: #4f5252;
+}
+
+.nav :global(.hoverme1) {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.1s;
+}
+
+.nav :hover:global(.hoverme1) {
+  letter-spacing: 6px;
+}
+
+.nav :global(.hoverme2) {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.1s;
+}
+
+.nav :hover:global(.hoverme2) {
+  letter-spacing: 5px;
+}
+
+.nav :global(.active) {
+  box-shadow: 0px 3px 0px #e6ebec;
+}

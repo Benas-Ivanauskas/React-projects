@@ -1,0 +1,29 @@
+.footer {
+  width: 800px;
+  height: 40px;
+  color: white;
+  display: flex;
+  position: absolute;
+  bottom: 80px;
+  left: 1150px;
+}
+.footer :global(.to-page) {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.15s;
+}
+
+.footer :hover:global(.to-page) {
+  color: rgb(10, 212, 10);
+}
+
+.footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 330px;
+  position: absolute;
+  top: 12px;
+  left: 300px;
+}

@@ -1,0 +1,117 @@
+.section {
+  width: 4rem 4rem;
+  margin-top: 30px;
+  background-color: rgb(19, 18, 18);
+  position: relative;
+}
+
+.section :global(.form) {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 500px;
+  height: 100px;
+  position: absolute;
+  top: 250px;
+  right: 400px;
+}
+
+.section input {
+  width: 400px;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 8px;
+  background-color: rgb(102, 100, 100);
+  font-size: 15px;
+  border-style: solid;
+  border-width: 3px;
+  transition: 0.15s;
+}
+
+.section input::placeholder {
+  color: white;
+}
+
+.section p {
+  display: flex;
+  color: white;
+  font-size: 17px;
+}
+
+.section :global(.message-input) {
+  height: 60px;
+  text-align: start;
+}
+
+.section button {
+  display: flex;
+  margin-top: 30px;
+  width: 418px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  font-size: 17px;
+  justify-content: center;
+  background-color: rgb(19, 18, 18);
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  transition: 0.15s;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.section button:hover {
+  display: block;
+  border-color: rgb(10, 212, 10);
+  color: rgb(10, 212, 10);
+}
+
+.section :global(.connect-text) {
+  position: absolute;
+  top: 250px;
+  left: 500px;
+  color: white;
+  font-size: 50px;
+}
+
+.section :global(.p-text) {
+  position: absolute;
+  top: 350px;
+  left: 500px;
+  width: 450px;
+  text-align: start;
+  font-size: 23px;
+  color: rgb(209, 203, 203);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 25px;
+}
+
+.section :global(.img-github) {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  object-fit: cover;
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+  top: 500px;
+  left: 500px;
+  cursor: pointer;
+}
+
+.section :global(.img-linkedin) {
+  position: absolute;
+  width: 87px;
+  border-radius: 80px;
+  height: 87px;
+  object-fit: cover;
+  border-style: solid;
+  border-width: 0px;
+  border-color: white;
+  top: 500px;
+  left: 630px;
+  cursor: pointer;
+}
