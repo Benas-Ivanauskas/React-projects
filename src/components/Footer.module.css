@@ -5,7 +5,7 @@
   display: flex;
   position: absolute;
   bottom: 80px;
-  left: 1150px;
+  left: 900px;
 }
 .footer :global(.to-page) {
   color: white;
