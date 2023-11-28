@@ -37,7 +37,8 @@ function AboutMeLayout() {
       </div>
 
       <button className="see-more-btn" onClick={handleClick}>
-        {showPopUse ? "Close" : "See More"}
+        {/*{showPopUse ? "Close" : "See More"} Uztenka, kad butu see more */}
+        See More
       </button>
       {showPopUse && <PopUp setShowPopUse={setShowPopUse} />}
     </section>
