@@ -2,7 +2,6 @@
   width: 4rem 4rem;
   margin-top: 30px;
   background-color: rgb(19, 18, 18);
-
   position: relative;
 }
 
@@ -135,4 +134,29 @@
   display: block;
   border-color: rgb(10, 212, 10);
   color: rgb(10, 212, 10);
+}
+
+@media screen and (max-width: 1200px) {
+  .section :global(.name) {
+    left: 140px;
+    font-size: 40px;
+  }
+  .section :global(.container) {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+  }
+  .section :global(.benas-img) {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+    position: absolute;
+    display: block;
+    z-index: 3;
+    left: 700px;
+    top: 240px;
+  }
 }
