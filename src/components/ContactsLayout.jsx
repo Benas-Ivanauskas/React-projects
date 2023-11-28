@@ -1,6 +1,11 @@
+import { useState } from "react";
 import styles from "./ContactsLayout.module.css";
 
 function ContactsLayout() {
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [input, setInput] = useState("");
+
   return (
     <section className={styles.section}>
       <h1 className="connect-text">Lets Connect</h1>
@@ -15,11 +20,24 @@ function ContactsLayout() {
 
       <form className="form">
         <p>Your Email</p>
-        <input placeholder="Type email..." />
+        <input
+          placeholder="Type email..."
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
         <p>Subject</p>
-        <input placeholder="Just say hi..." />
+        <input
+          placeholder="Just say hi..."
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
+        />
         <p>Message</p>
-        <input placeholder="Let's talk about..." className="message-input" />
+        <input
+          placeholder="Let's talk about..."
+          className="message-input"
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
         <button>Send Message</button>
       </form>
     </section>
