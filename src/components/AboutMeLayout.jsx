@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./AboutMeLayout.module.css";
-
+import PopUp from "./PopUp";
 function AboutMeLayout() {
   const [showPopUse, setShowPopUse] = useState(false);
 
@@ -39,56 +39,9 @@ function AboutMeLayout() {
       <button className="see-more-btn" onClick={handleClick}>
         {showPopUse ? "Close" : "See More"}
       </button>
-      {showPopUse && <PopUse setShowPopUse={setShowPopUse} />}
+      {showPopUse && <PopUp setShowPopUse={setShowPopUse} />}
     </section>
   );
 }
 
 export default AboutMeLayout;
-
-function PopUse({ setShowPopUse }) {
-  function handleClick() {
-    setShowPopUse(false);
-  }
-  return (
-    <>
-      <div className="popuse-container"></div>
-      <div className="popuse">
-        <h2>Personal info</h2>
-        <main>
-          <li className="list">
-            First name: <span>Benas</span>
-          </li>
-          <li className="list">
-            Last name: <span>Ivanauskas</span>
-          </li>
-          <li className="list">
-            Age: <span>27 Years</span>
-          </li>
-          <li className="list">
-            Phone: <span> +370*****</span>
-          </li>
-          <li className="list">
-            Adress: <span> Vilnius</span>
-          </li>
-          <li className="list">
-            Email: <span> you@gmail.com</span>
-          </li>
-          <li className="list">
-            Languages: <span> Lithuania, English</span>
-          </li>
-          <li className="list">
-            Freelance: <span> Available</span>
-          </li>
-          <button>Download CV</button>
-        </main>
-
-        <div>
-          <button className="popup-btn" onClick={handleClick}>
-            ❌
-          </button>
-        </div>
-      </div>
-    </>
-  );
-}
