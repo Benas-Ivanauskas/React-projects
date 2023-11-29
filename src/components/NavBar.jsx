@@ -15,7 +15,7 @@ function NavBar() {
             <NavLink to="/aboutme">About Me</NavLink>
           </li>
           <li className="hoverme1">
-            <NavLink to="/resume">Resume</NavLink>
+            <NavLink to="/projects">Projects</NavLink>
           </li>
           <li className="hoverme1">
             <NavLink to="/contacts">Contacts</NavLink>

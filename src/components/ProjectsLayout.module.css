@@ -1,0 +1,32 @@
+.section {
+  width: 4rem 4rem;
+  margin-top: 30px;
+  background-color: rgb(19, 18, 18);
+  position: relative;
+  display: flex;
+}
+
+.box {
+  width: 1000px;
+  height: 500px;
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  object-position: center;
+  margin-left: 100px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 300px;
+}
+
+.ogo {
+  color: rgb(235, 229, 229);
+  text-align: center;
+}
+
+.div {
+  height: 400px;
+  width: 400px;
+}

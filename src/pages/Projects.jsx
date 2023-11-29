@@ -1,17 +1,16 @@
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
-import ResumeLayout from "../components/ResumeLayout";
-import styles from "./Resume.module.css";
+import ProjectsLayout from "../components/ProjectsLayout";
+import styles from "./Projects.module.css";
 
-function Resume() {
+function Projects() {
   return (
     <section className={styles.resume}>
       <NavBar />
-      <ResumeLayout />
+      <ProjectsLayout />
       <Footer />
     </section>
   );
 }
 
-export default Resume;
-Resume;
+export default Projects;

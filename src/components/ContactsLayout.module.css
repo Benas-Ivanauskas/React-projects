@@ -11,8 +11,8 @@
   width: 500px;
   height: 100px;
   position: absolute;
-  top: 250px;
-  right: 400px;
+  top: 120px;
+  right: 200px;
 }
 
 .section input {
@@ -29,6 +29,7 @@
 
 .section input::placeholder {
   color: white;
+  font-size: 12px;
 }
 
 .section p {
@@ -70,19 +71,19 @@
 
 .section :global(.connect-text) {
   position: absolute;
-  top: 250px;
-  left: 500px;
+  top: 120px;
+  left: 300px;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .section :global(.p-text) {
   position: absolute;
-  top: 350px;
-  left: 500px;
+  top: 200px;
+  left: 300px;
   width: 450px;
   text-align: start;
-  font-size: 23px;
+  font-size: 20px;
   color: rgb(209, 203, 203);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 25px;
@@ -90,28 +91,28 @@
 
 .section :global(.img-github) {
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 80px;
   object-fit: cover;
   border-style: solid;
   border-width: 3px;
   border-color: white;
-  top: 500px;
-  left: 500px;
+  top: 350px;
+  left: 320px;
   cursor: pointer;
 }
 
 .section :global(.img-linkedin) {
   position: absolute;
-  width: 87px;
+  width: 65px;
   border-radius: 80px;
-  height: 87px;
+  height: 65px;
   object-fit: cover;
   border-style: solid;
   border-width: 0px;
   border-color: white;
-  top: 500px;
-  left: 630px;
+  top: 350px;
+  left: 430px;
   cursor: pointer;
 }

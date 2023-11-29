@@ -95,8 +95,8 @@
   width: 700px;
   height: 500px;
   position: absolute;
-  left: 450px;
-  top: 80px;
+  left: 150px;
+  top: 0px;
 }
 
 .section :global(.benas-img) {
@@ -107,16 +107,16 @@
   position: absolute;
   display: block;
   z-index: 3;
-  right: 600px;
-  top: 240px;
+  right: 400px;
+  top: 140px;
 }
 
 .section :global(.btn) {
   display: block;
   width: 200px;
   position: absolute;
-  top: 530px;
-  left: 585px;
+  top: 430px;
+  left: 285px;
   background-color: rgb(19, 18, 18);
   padding: 20px;
   font-size: 20px;

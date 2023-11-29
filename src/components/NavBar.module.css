@@ -10,14 +10,14 @@
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .nav a:link,
 .nav a:visited {
   text-decoration: none;
   color: rgb(245, 250, 249);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   transition: 0.5s;
 }
 
