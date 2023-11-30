@@ -93,13 +93,3 @@
 .nav :global(.active) {
   box-shadow: 0px 3px 0px #e6ebec;
 }
-
-@media screen and (max-width: 1800px) {
-  .nav li {
-    width: 140px;
-  }
-  .nav a:link,
-  .nav a:visited {
-    font-size: 1.4rem;
-  }
-}

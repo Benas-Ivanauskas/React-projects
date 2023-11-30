@@ -46,6 +46,7 @@ function Carousel() {
         <div className={styles.div}>
           <h3 className={styles.ogo}>Practise project: Eat-N-Split</h3>
           <button>Click here</button>
+          Eat project
           <img src="../public/ben.jpg" className={styles.img} />
         </div>
         <div className={styles.div}>

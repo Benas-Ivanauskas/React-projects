@@ -13,8 +13,8 @@ function Footer() {
         <Link to="/aboutme" className="to-page">
           About Me
         </Link>
-        <Link to="/resume" className="to-page">
-          Resume
+        <Link to="/projects" className="to-page">
+          Projects
         </Link>
 
         <Link to="/contacts" className="to-page">

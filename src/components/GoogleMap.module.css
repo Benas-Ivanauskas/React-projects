@@ -1,0 +1,12 @@
+.input .GoogleMap {
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.GoogleMap iframe {
+  position: absolute;
+  top: 155px;
+  right: 70px;
+  border: 0;
+}

@@ -5,72 +5,7 @@
   position: relative;
 }
 
-.section :global(.form) {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  width: 500px;
-  height: 100px;
-  position: absolute;
-  top: 120px;
-  right: 200px;
-}
-
-.section input {
-  width: 400px;
-  height: 30px;
-  padding-left: 10px;
-  border-radius: 8px;
-  background-color: rgb(102, 100, 100);
-  font-size: 15px;
-  border-style: solid;
-  border-width: 3px;
-  transition: 0.15s;
-}
-
-.section input::placeholder {
-  color: white;
-  font-size: 12px;
-}
-
-.section p {
-  display: flex;
-  color: white;
-  font-size: 17px;
-}
-
-.section :global(.message-input) {
-  height: 60px;
-  text-align: start;
-}
-
-.section button {
-  display: flex;
-  margin-top: 30px;
-  width: 418px;
-  height: 45px;
-  padding: 10px;
-  border-radius: 20px;
-  border-style: solid;
-  border-width: 2px;
-  font-size: 17px;
-  justify-content: center;
-  background-color: rgb(19, 18, 18);
-  border-color: white;
-  color: white;
-  cursor: pointer;
-  transition: 0.15s;
-  font-size: 17px;
-  font-weight: bold;
-}
-
-.section button:hover {
-  display: block;
-  border-color: rgb(10, 212, 10);
-  color: rgb(10, 212, 10);
-}
-
 .section :global(.connect-text) {
-  position: absolute;
   top: 120px;
   left: 300px;
   color: white;
@@ -78,7 +13,6 @@
 }
 
 .section :global(.p-text) {
-  position: absolute;
   top: 200px;
   left: 300px;
   width: 450px;
@@ -90,7 +24,6 @@
 }
 
 .section :global(.img-github) {
-  position: absolute;
   width: 60px;
   height: 60px;
   border-radius: 80px;
@@ -101,10 +34,10 @@
   top: 350px;
   left: 320px;
   cursor: pointer;
+  margin-right: 30px;
 }
 
 .section :global(.img-linkedin) {
-  position: absolute;
   width: 65px;
   border-radius: 80px;
   height: 65px;
@@ -115,4 +48,24 @@
   top: 350px;
   left: 430px;
   cursor: pointer;
+}
+
+.section :global(.input-container) {
+  width: 400px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 480px;
+}
+
+.section :global(.connect) {
+  position: absolute;
+  top: 100px;
+  width: 500px;
+  height: 300px;
+
+  left: 170px;
+  text-align: start;
 }
