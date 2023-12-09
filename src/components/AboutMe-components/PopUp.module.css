@@ -55,7 +55,7 @@
 
 .section main {
   display: grid;
-  grid-template-columns: 250px 200px;
+  grid-template-columns: 250px 260px;
   gap: 8px;
   text-align: start;
   position: absolute;
@@ -78,7 +78,7 @@
   color: #a9afc3;
   z-index: 1;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .section :global(.span) {
@@ -153,7 +153,7 @@
   padding-right: 30px;
   list-style: none;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   position: relative;
   right: -40px;
@@ -180,18 +180,42 @@
   display: grid;
   color: white;
   text-align: start;
-  width: 600px;
+  width: 550px;
   position: absolute;
   top: 250px;
-  right: 30px;
+  right: 80px;
 }
 
 .exp3 {
   display: grid;
   color: white;
   text-align: start;
-  width: 600px;
+  width: 550px;
   position: absolute;
   top: 400px;
-  right: 30px;
+  right: 80px;
+}
+
+.about {
+  position: absolute;
+  width: 490px;
+  text-align: start;
+  top: 230px;
+  left: 63px;
+}
+
+.section :global(.abouttext) {
+  font-size: 30px;
+  color: white;
+  border-bottom: solid;
+  border-width: 2px;
+  width: 130px;
+}
+.section :global(.text) {
+  list-style: none;
+  color: #a9afc3;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: -10px;
 }

@@ -18,6 +18,7 @@
   border-style: solid;
   border-width: 3px;
   transition: 0.15s;
+  display: fixed;
 }
 
 .section input::placeholder {

@@ -41,7 +41,7 @@ export default function PopUp({ setShowPopUse }) {
               Adress: <span className="span"> Vilnius</span>
             </li>
             <li className="list">
-              Email: <span className="span"> you@gmail.com</span>
+              Email: <span className="span"> Benas.Ivanauskas@gmail.com</span>
             </li>
             <li className="list">
               Languages: <span className="span"> Lithuanian, English</span>
@@ -49,7 +49,7 @@ export default function PopUp({ setShowPopUse }) {
             <li className="list">
               Freelance: <span className="span"> Available</span>
             </li>
-            <button>Download CV</button>
+            {/* <button>Download CV</button> */}
           </main>
 
           <div>
@@ -60,32 +60,46 @@ export default function PopUp({ setShowPopUse }) {
           <experience>
             <h2 className="exp-text">Experience</h2>
             <div className={styles.exp}>
-              <ul className="years">2018 - Present</ul>
-              <ul className="position">Web Developer - Envato (exmaple)</ul>
+              <ul className="years">2021-06 / 2023-12</ul>
+              <ul className="position">Work Manager - MVP Lietuva</ul>
               <ul className="respon">
-                Lorem ipsum dolor sit amet, consectetur tempor incididunt ut
-                labore adipisicing elit (example)
+                The HVAC Work Manager leads and organizes HVAC projects, manages
+                teams, and ensures quality and safety for successful outcomes.
               </ul>
             </div>
 
             <div className={styles.exp2}>
-              <ul className="years">2018 - Present</ul>
-              <ul className="position">Web Developer - Envato (exmaple)</ul>
+              <ul className="years">2020-06 / 2021-06</ul>
+              <ul className="position">Work Manager - Infes</ul>
               <ul className="respon">
-                Lorem ipsum dolor sit amet, consectetur tempor incididunt ut
-                labore adipisicing elit (example)
+                Sewage treatment equipment installation works, outdoor and
+                indoor engineering network installation, planning and
+                organization
               </ul>
             </div>
 
             <div className={styles.exp3}>
-              <ul className="years">2018 - Present</ul>
-              <ul className="position">Web Developer - Envato (exmaple)</ul>
+              <ul className="years">2019-06 - 2020-06</ul>
+              <ul className="position">Work Manager - Vesa ir partneriai</ul>
               <ul className="respon">
-                Lorem ipsum dolor sit amet, consectetur tempor incididunt ut
-                labore adipisicing elit (example)
+                Responsible for HVAC system installation, including
+                organization, planning, and quality assurance of work
+                performance
               </ul>
             </div>
           </experience>
+          <main2 className={styles.about}>
+            <h2 className="abouttext">About Me</h2>
+            <p className="text">
+              After many years working in the HVAC field, I ve decided to pursue
+              a career change. I m a self-taught beginner web developer with a
+              keen focus on mastering front-end skills. I am actively learning
+              and commited to continouse progress.
+              <br /> Feel free to check my works on GitHub at
+              https://github.com/Benas-Ivanauskas, and I welcome any comments or
+              feedback. interested position junior front-end developer.
+            </p>
+          </main2>
         </div>
       </section>
     </>

@@ -1,6 +1,6 @@
 import styles from "./ContactsLayout.module.css";
-import GoogleMap from "./GoogleMap";
-import Forma from "./Forma";
+import GoogleMap from "./Contacts-components/GoogleMap";
+import Forma from "./Contacts-components/Forma";
 
 function ContactsLayout() {
   return (

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "./AboutMeLayout.module.css";
-import PopUp from "./PopUp";
+import PopUp from "./AboutMe-components/PopUp";
 function AboutMeLayout() {
   const [showPopUse, setShowPopUse] = useState(false);
 

@@ -6,6 +6,7 @@
   position: absolute;
   bottom: 37px;
   left: 650px;
+  text-align: center;
 }
 .footer :global(.to-page) {
   color: white;
@@ -24,9 +25,11 @@
   justify-content: space-between;
   width: 330px;
   position: absolute;
-  top: 12px;
+  top: 10px;
   left: 300px;
 }
 .footer p {
   font-size: 15px;
+  position: absolute;
+  top: -5px;
 }
