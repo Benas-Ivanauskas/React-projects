@@ -9,3 +9,5 @@ Currently, two official plugins are available:
 
 React version 18.2.0.
 You can open project with command in terminal: npm run dev
+
+Where is some mistake with css, it's gonna be fixed soon! 
