@@ -14,29 +14,42 @@ export default function App() {
   function handleShow() {
     setShow(!show);
   }
+  const [cartItems, setCartItems] = useState([]);
+  const [cartItemCount, setCartItemCount] = useState(0);
+  const addToCart = (product) => {
+    setCartItems([...cartItems, product]);
+  };
+
+  const updateCartItemCount = (newCount) => {
+    setCartItemCount(newCount);
+  };
+
   return (
     <>
-      <div>
-        <NavBar />
-        {show && <MainPage handleShow={handleShow} />}
-        <Routes>
-          <Route path="/mainpage" element={<MainPage />} />
-          <Route path="/pick-apprel" element={<PickApparel />} />
-          <Route path="/pick-apparel/man-product" element={<MansClothing />} />
-          <Route
-            path="/pick-apparel/woman-product"
-            element={<WomanProductClothing />}
-          />
-          <Route
-            path="/pick-apparel/man-product/read-more/product/:id"
-            element={<ReadMoreManCurrentProduct />}
-          />
-          <Route
-            path="/pick-apparel/woman-product/read-more/product/:id"
-            element={<ReadMoreWomanCurrentProduct />}
-          />
-        </Routes>
-      </div>
+      <NavBar cartItems={cartItems} cartItemCount={cartItemCount} />
+      {show && <MainPage handleShow={handleShow} />}
+      <Routes>
+        <Route path="/mainpage" element={<MainPage />} />
+        <Route path="/pick-apprel" element={<PickApparel />} />
+        <Route path="/pick-apparel/man-product" element={<MansClothing />} />
+        <Route
+          path="/pick-apparel/woman-product"
+          element={<WomanProductClothing />}
+        />
+        <Route
+          path="/pick-apparel/man-product/read-more/product/:id"
+          element={
+            <ReadMoreManCurrentProduct
+              addToCart={addToCart}
+              updateCartItemCount={updateCartItemCount}
+            />
+          }
+        />
+        <Route
+          path="/pick-apparel/woman-product/read-more/product/:id"
+          element={<ReadMoreWomanCurrentProduct />}
+        />
+      </Routes>
     </>
   );
 }

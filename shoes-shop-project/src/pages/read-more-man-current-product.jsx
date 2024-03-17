@@ -1,12 +1,40 @@
 import { Link, useParams } from "react-router-dom";
 import manShoesShoppintProducts from "../data/productData";
 import "./read-more-current-product.css";
+import { useState } from "react";
 
-export default function ReadMoreManCurrentProduct() {
+export default function ReadMoreManCurrentProduct({
+  addToCart,
+  updateCartItemCount,
+}) {
   const { id } = useParams();
   const product = manShoesShoppintProducts.find(
     (product) => product.id === parseInt(id)
   );
+
+  const [addToCartClicked, setAddToCartClicked] = useState(false);
+  const [count, setCount] = useState(1);
+
+  const handleAddToCart = () => {
+    addToCart({ ...product, quantity: count });
+    setAddToCartClicked(true);
+    setCount(1);
+  };
+
+  const handleIncreaseCount = () => {
+    const updatedCount = count + 1;
+    setCount(updatedCount);
+    addToCart({ ...product, quantity: updatedCount });
+    updateCartItemCount(updatedCount);
+  };
+  const handleDecreaseCount = () => {
+    if (count > 1) {
+      const updatedCount = count - 1;
+      setCount(updatedCount);
+      addToCart({ ...product, quantity: updatedCount });
+      updateCartItemCount(updatedCount);
+    }
+  };
 
   return (
     <div className="product-view">
@@ -29,7 +57,21 @@ export default function ReadMoreManCurrentProduct() {
             <Link to="/pick-apparel/man-product">
               <button className="btn-current-product">PREVIOUS PAGE</button>
             </Link>
-            <button className="btn-current-product">ADD TO CART</button>
+            {addToCartClicked ? (
+              <button className="btn-current-product">
+                <button className="count-btn" onClick={handleDecreaseCount}>
+                  -
+                </button>
+                {count}
+                <button className="count-btn" onClick={handleIncreaseCount}>
+                  +
+                </button>
+              </button>
+            ) : (
+              <button className="btn-current-product" onClick={handleAddToCart}>
+                ADD TO CART
+              </button>
+            )}
           </div>
         </div>
       </div>

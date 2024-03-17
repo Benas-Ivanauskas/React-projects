@@ -61,3 +61,16 @@ const manShoesShoppintProducts = [
   },
 ];
 export default manShoesShoppintProducts;
+
+function getProductData(id) {
+  let productData = manShoesShoppintProducts.find(
+    (product) => product.id === id
+  );
+  if (productData === undefined) {
+    console.log("Product data does not exist for ID" + id);
+    return undefined;
+  }
+  return productData;
+}
+
+export { manShoesShoppintProducts, getProductData };

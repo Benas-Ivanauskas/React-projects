@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Madimi+One&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import "../Variables/_Variables.scss";
+
+section {
+  height: auto;
+  width: 100%;
+}
+
+.section-description {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  h2 {
+    font-size: $base-font-size * 2;
+    font-weight: $bold-font-weight;
+    font-family: $base-font-family;
+    line-height: 32px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: $base-font-size * 1.1;
+    font-weight: $normal-font-weight;
+    font-family: $base-font-family;
+    margin: 0 auto;
+    max-width: 1200px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  div {
+    position: relative;
+    .new-car-btn {
+      width: 310px;
+      height: 60px;
+      border-radius: 10px;
+      font-size: 22.4px;
+      font-weight: 700;
+      line-height: normal;
+      color: #fff;
+      cursor: pointer;
+      width: 250px;
+      height: 70px;
+      font-size: $base-font-size * 1.7;
+      position: relative;
+      background-color: $button-background-color;
+      border: none;
+    }
+
+    .triangleDown {
+      position: absolute;
+      bottom: -30px;
+      left: 48%;
+      font-size: $base-font-size * 3.5;
+      color: $button-background-color;
+    }
+  }
+}
+.choose-car {
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .car-info {
+    width: 380px;
+    height: 420px;
+    background-color: $card-description-background-color;
+    text-align: center;
+    .img-container {
+      width: 100%;
+      max-width: 100%;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+    h2 {
+      font-size: $base-font-size * 1.5;
+      color: $black-color;
+      line-height: 24px;
+      font-family: $base-font-family;
+      font-weight: $bold-font-weight;
+      padding: 10px 0;
+    }
+    h4 {
+      font-size: $base-font-size * 1.2;
+      font-family: $base-font-family;
+      padding: 5px;
+      font-weight: $normal-font-weight;
+    }
+  }
+}

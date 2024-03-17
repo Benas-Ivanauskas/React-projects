@@ -1,12 +1,31 @@
 import { Link, useParams } from "react-router-dom";
 import shoesShoppintProducts from "./../data/productDataWoman";
 import "./read-more-current-product.css";
+import { useState } from "react";
 
 export default function ReadMoreWomanCurrentProduct() {
   const { id } = useParams();
   const product = shoesShoppintProducts.find(
     (product) => product.id === parseInt(id)
   );
+
+  const [addToCartClicked, setAddToCartClicked] = useState(false);
+  const [count, setCount] = useState(0);
+
+  const handleAddToCart = () => {
+    setAddToCartClicked(true);
+    setCount(1);
+  };
+
+  const handleIncreaseCount = () => {
+    setCount(count + 1);
+  };
+
+  const handleDecreaseCount = () => {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  };
 
   return (
     <div className="product-view">
@@ -29,7 +48,21 @@ export default function ReadMoreWomanCurrentProduct() {
             <Link to="/pick-apparel/woman-product">
               <button className="btn-current-product">PREVIOUS PAGE</button>
             </Link>
-            <button className="btn-current-product">ADD TO CART</button>
+            {addToCartClicked ? (
+              <button className="btn-current-product">
+                <button className="count-btn" onClick={handleDecreaseCount}>
+                  -
+                </button>
+                {count}
+                <button className="count-btn" onClick={handleIncreaseCount}>
+                  +
+                </button>
+              </button>
+            ) : (
+              <button className="btn-current-product" onClick={handleAddToCart}>
+                ADD TO CART
+              </button>
+            )}
           </div>
         </div>
       </div>

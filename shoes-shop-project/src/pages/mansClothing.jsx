@@ -40,8 +40,9 @@ function List({ image, title, brand, price, productId }) {
         </h3>
         <p>Price - {price} &#8364;</p>
         <div className="buttons">
-          <ButtonFromProduct>READ MORE</ButtonFromProduct>
-          <ButtonFromProduct>ADD TO CART</ButtonFromProduct>
+          <Link to={`/pick-apparel/man-product/read-more/product/${productId}`}>
+            <ButtonFromProduct>READ MORE</ButtonFromProduct>
+          </Link>
         </div>
       </div>
     </>

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Madimi+One&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@import "../Variables/_Variables.scss";
+
+@mixin text-style {
+  color: $white-color;
+  font-size: $base-font-size * 1.2;
+  font-style: $base-font-family;
+  font-weight: $bold-font-weight;
+}
+
+@mixin button-style($background-color, $border-color: null) {
+  @include text-style;
+  border: if($border-color, 1px solid $border-color, none);
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: $background-color;
+  cursor: pointer;
+}
+
+header {
+  background-color: $header-background-color;
+  width: 100%;
+  height: 80px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 150px;
+}
+
+nav {
+  ul {
+    display: flex;
+    gap: 50px;
+    li {
+      list-style: none;
+      a {
+        text-decoration: none;
+        @include text-style;
+      }
+    }
+  }
+}
+
+.login-btn {
+  @include button-style($header-background-color);
+  cursor: pointer;
+  .arrowDropDown {
+    font-size: 2rem;
+  }
+}
