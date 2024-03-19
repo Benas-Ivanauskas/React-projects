@@ -1,8 +1,9 @@
 import "./../../sass/homePage-sections-styles/section.css";
+import HomePageCars from "../components/HomePageCars";
 
 import { GoTriangleDown } from "react-icons/go";
 
-function FindCar() {
+function FindCar({ cars }) {
   return (
     <>
       <section>
@@ -22,80 +23,7 @@ function FindCar() {
             <GoTriangleDown className="triangleDown" />
           </div>
         </div>
-        <div className="choose-car">
-          <div className="car-info">
-            <div className="img-container">
-              <img src="./../../src/img/martini.png" alt="test" />
-            </div>
-            <h2>Martini porsche</h2>
-            <h4>
-              Location: <span>Vilnius</span>
-            </h4>
-            <h4>
-              Daily price <span>100&euro;</span>
-            </h4>
-          </div>
-          <div className="car-info">
-            <div className="img-container">
-              <img src="./../../src/img/martini.png" alt="test" />
-            </div>
-            <h2>Martini porsche</h2>
-            <h4>
-              Location: <span>Vilnius</span>
-            </h4>
-            <h4>
-              Daily price <span>100&euro;</span>
-            </h4>
-          </div>
-          <div className="car-info">
-            <div className="img-container">
-              <img src="./../../src/img/martini.png" alt="test" />
-            </div>
-            <h2>Martini porsche</h2>
-            <h4>
-              Location: <span>Vilnius</span>
-            </h4>
-            <h4>
-              Daily price <span>100&euro;</span>
-            </h4>
-          </div>
-          <div className="car-info">
-            <div className="img-container">
-              <img src="./../../src/img/martini.png" alt="test" />
-            </div>
-            <h2>Martini porsche</h2>
-            <h4>
-              Location: <span>Vilnius</span>
-            </h4>
-            <h4>
-              Daily price <span>100&euro;</span>
-            </h4>
-          </div>
-          <div className="car-info">
-            <div className="img-container">
-              <img src="./../../src/img/martini.png" alt="test" />
-            </div>
-            <h2>Martini porsche</h2>
-            <h4>
-              Location: <span>Vilnius</span>
-            </h4>
-            <h4>
-              Daily price <span>100&euro;</span>
-            </h4>
-          </div>
-          <div className="car-info">
-            <div className="img-container">
-              <img src="./../../src/img/martini.png" alt="test" />
-            </div>
-            <h2>Martini porsche</h2>
-            <h4>
-              Location: <span>Vilnius</span>
-            </h4>
-            <h4>
-              Daily price <span>100&euro;</span>
-            </h4>
-          </div>
-        </div>
+        <HomePageCars cars={cars} />
       </section>
     </>
   );

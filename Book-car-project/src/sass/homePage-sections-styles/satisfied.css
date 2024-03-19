@@ -29,9 +29,7 @@
   text-align: center;
   gap: 10px;
 }
-.satisfied-costumers .card .luggage-icon,
-.satisfied-costumers .card .car-icon,
-.satisfied-costumers .card .person-icon {
+.satisfied-costumers .card .card-icon {
   color: #fff;
   font-size: 56px;
   margin: 0;

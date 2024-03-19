@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../../sass/components-styles/navBar.css";
 import { MdArrowDropDown } from "react-icons/md";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 export default function NavBar() {
   return (
@@ -30,6 +31,9 @@ export default function NavBar() {
             Login
             <MdArrowDropDown className="arrowDropDown" />
           </button>
+        </div>
+        <div className="burger">
+          <RxHamburgerMenu className="burger-icon" />
         </div>
       </header>
     </>

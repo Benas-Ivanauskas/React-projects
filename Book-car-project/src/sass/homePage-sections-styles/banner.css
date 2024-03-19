@@ -42,4 +42,37 @@
   margin: 30px auto;
   width: 310px;
   height: 90px;
+}
+
+@media all and (max-width: 1450px) {
+  .banner {
+    background-size: cover;
+    background-position: center top;
+  }
+  .banner-container {
+    margin: 200px 50px 0 0;
+  }
+}
+@media all and (max-width: 1110px) {
+  .banner-container {
+    margin: 380px 50px 0 0;
+  }
+}
+@media all and (max-width: 768px) {
+  .banner-container {
+    margin: 320px 50px 0 20px;
+  }
+  .banner-container h1 {
+    font-size: 44.8px;
+    line-height: 54px;
+  }
+  .banner-container h3 {
+    font-size: 24px;
+  }
+  .banner-container .banner-btn {
+    font-size: 28.8px;
+    margin: 20px auto;
+    width: 270px;
+    height: 70px;
+  }
 }/*# sourceMappingURL=banner.css.map */

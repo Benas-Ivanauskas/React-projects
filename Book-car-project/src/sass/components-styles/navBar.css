@@ -28,6 +28,16 @@ nav ul li a {
   font-weight: 700;
 }
 
+.burger {
+  display: none;
+}
+.burger .burger-icon {
+  color: #fff;
+  font-size: 32px;
+  cursor: pointer;
+  margin: 25px 0px 0px 50px;
+}
+
 .login-btn {
   color: #fff;
   font-size: 19.2px;
@@ -43,4 +53,41 @@ nav ul li a {
 }
 .login-btn .arrowDropDown {
   font-size: 2rem;
+}
+
+@media all and (max-width: 1100px) {
+  .header-container {
+    margin: 0px 50px;
+  }
+}
+@media all and (max-width: 900px) {
+  .header-container {
+    margin: 0px 20px;
+  }
+  nav ul {
+    gap: 15px;
+  }
+  nav ul li a {
+    font-size: 19.2px;
+  }
+  .login-btn {
+    font-size: 19.2px;
+    gap: 0px;
+  }
+  .login-btn .arrowDropDown {
+    font-size: 2rem;
+  }
+}
+@media all and (max-width: 700px) {
+  .burger {
+    display: block;
+  }
+  .burger .burger-icon {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+  }
+  .header-container {
+    display: none;
+  }
 }/*# sourceMappingURL=navBar.css.map */

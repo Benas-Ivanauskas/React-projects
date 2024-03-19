@@ -43,9 +43,7 @@
     justify-content: center;
     text-align: center;
     gap: 10px;
-    .luggage-icon,
-    .car-icon,
-    .person-icon {
+    .card-icon {
       @include icon-style;
     }
     h3 {
