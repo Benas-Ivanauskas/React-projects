@@ -33,7 +33,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/homepage" replace />} />
         <Route path="/homepage" element={<HomePage cars={cars} />} />
-        <Route path="/car-listing" element={<CarListing />} />
+        <Route path="/car-listing" element={<CarListing cars={cars} />} />
       </Routes>
       <Footer />
     </Router>
