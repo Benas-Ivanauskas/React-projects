@@ -56,18 +56,29 @@
       "model": 2024,
       "seats": 5,
       "cost": 400,
-      "fuel": "Petrol",
+      "fuel": "Diesel",
       "location": "Vilnius",
       "image": "./src/img/porsche-macan.jpg"
     },
     {
       "id": 7,
-      "brand": "Porsche",
-      "model": 2024,
-      "seats": 7,
-      "cost": 60,
-      "fuel": "Petrol",
-      "location": "Vilnius"
+      "brand": "Porsche Cayenne",
+      "model": 2021,
+      "seats": 4,
+      "cost": 250,
+      "fuel": "Diesel",
+      "location": "Vilnius",
+      "image": "./src/img/porsche-cayane.jpg"
+    },
+    {
+      "id": 8,
+      "brand": "Audi A1 All Street",
+      "model": 2023,
+      "seats": 5,
+      "cost": 300,
+      "fuel": "Diesel",
+      "location": "Vilnius",
+      "image": "./src/img/audi-allstreet.jpg"
     }
   ]
 }

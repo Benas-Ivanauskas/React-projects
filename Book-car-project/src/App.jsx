@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import "./sass/normalized.css";
 import { useEffect, useState } from "react";
+import CurrentCarPage from "./Pages/CurrentCarPage";
 
 export default function App() {
   const [cars, setCars] = useState([]);
@@ -34,6 +35,10 @@ export default function App() {
         <Route path="/" element={<Navigate to="/homepage" replace />} />
         <Route path="/homepage" element={<HomePage cars={cars} />} />
         <Route path="/car-listing" element={<CarListing cars={cars} />} />
+        <Route
+          path="/car-listing/car/:id"
+          element={<CurrentCarPage cars={cars} />}
+        />
       </Routes>
       <Footer />
     </Router>

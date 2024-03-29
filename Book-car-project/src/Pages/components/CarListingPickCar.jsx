@@ -2,9 +2,11 @@ import { IoPersonAddSharp } from "react-icons/io5";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaCarAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
-const CarListingPickCar = ({ cars, page }) => {
-  const displayTwoCars = cars.slice(page * 2 - 2, page * 2);
+const CarListingPickCar = ({ page, filteredCars }) => {
+  const displayTwoCars = filteredCars.slice(page * 2 - 2, page * 2);
+
   return (
     <div className="cars">
       {displayTwoCars.map((car, index) => {
@@ -34,7 +36,9 @@ const CarListingPickCar = ({ cars, page }) => {
                   </p>
                 </div>
               </div>
-              <button className="view-details-btn">View Details</button>
+              <Link to={`/car-listing/car/${car.id}`}>
+                <button className="view-details-btn">View Details</button>
+              </Link>
             </div>
           </div>
         );

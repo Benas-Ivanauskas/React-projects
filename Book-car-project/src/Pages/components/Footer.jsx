@@ -44,7 +44,7 @@ function Footer() {
             <button className="subscribe-btn">Subscribe</button>
             <p>
               *We send great deals and latest auto news to our subscribed users
-              very week.
+              every week.
             </p>
           </div>
         </div>
