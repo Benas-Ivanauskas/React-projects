@@ -1,7 +1,7 @@
 {
   "cars": [
     {
-      "id": 1,
+      "id": "1",
       "brand": "Range Rover Land",
       "model": 2022,
       "seats": 7,
@@ -12,9 +12,8 @@
       "overview": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
       "accessories": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
-
     {
-      "id": 2,
+      "id": "2",
       "brand": "Range Rover HSE D350",
       "model": 2024,
       "seats": 7,
@@ -26,7 +25,7 @@
       "accessories": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      "id": 3,
+      "id": "3",
       "brand": "BMW i5",
       "model": 2024,
       "seats": 5,
@@ -38,7 +37,7 @@
       "accessories": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      "id": 4,
+      "id": "4",
       "brand": "AUDI RS-e-tron GT",
       "model": 2024,
       "seats": 5,
@@ -50,7 +49,7 @@
       "accessories": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      "id": 5,
+      "id": "5",
       "brand": "BMW M4 Coupe",
       "model": 2025,
       "seats": 4,
@@ -62,7 +61,7 @@
       "accessories": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      "id": 6,
+      "id": "6",
       "brand": "Porsche Macan",
       "model": 2024,
       "seats": 5,
@@ -74,7 +73,7 @@
       "accessories": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      "id": 7,
+      "id": "7",
       "brand": "Porsche Cayenne",
       "model": 2021,
       "seats": 4,
@@ -86,7 +85,7 @@
       "accessories": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
     {
-      "id": 8,
+      "id": "8",
       "brand": "Audi A1 All Street",
       "model": 2023,
       "seats": 5,

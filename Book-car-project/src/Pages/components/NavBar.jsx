@@ -4,21 +4,30 @@ import { MdArrowDropDown } from "react-icons/md";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import Login from "./Login";
+import Register from "./Register";
 
 export default function NavBar() {
   const [showLogin, setShowLogin] = useState(false);
+  const [showRegister, setShowRegister] = useState(false);
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
 
   const handleShowLogin = () => {
     setShowLogin(true);
+    setShowRegister(false);
   };
 
   const handleLogout = () => {
     setUsername("");
     setPassword("");
     setLoggedIn(false);
+    setShowLogin(false);
+  };
+
+  const handleShowRegister = () => {
+    setShowRegister(true);
     setShowLogin(false);
   };
 
@@ -40,6 +49,7 @@ export default function NavBar() {
           setUsername(user.name);
           setLoggedIn(true);
           toast.success("Login successful!");
+          setShowRegister(false);
         })
         .catch((err) => {
           toast.error("Login failed due to: " + err.message);
@@ -49,6 +59,7 @@ export default function NavBar() {
     setUsername("");
     setPassword("");
     setShowLogin(false);
+    setShowRegister(false);
   };
 
   const validate = () => {
@@ -104,41 +115,17 @@ export default function NavBar() {
         <div className="burger">
           <RxHamburgerMenu className="burger-icon" />
         </div>
-        {showLogin && (
-          <div className="login-form">
-            <form onSubmit={proceedLogin}>
-              <div className="form-header">
-                <h2>User Login</h2>
-              </div>
-              <div className="form-group">
-                <label>
-                  User Name <span className="error-message">*</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="User Name"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                />
-                <label>
-                  Password <span className="error-message">*</span>
-                </label>
-                <input
-                  type="password"
-                  placeholder="Password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-              </div>
-              <div className="submit">
-                <button type="submit" className="login">
-                  Login
-                </button>
-                <span className="new-user">Register</span>
-              </div>
-            </form>
-          </div>
-        )}
+        <Login
+          showLogin={showLogin}
+          proceedLogin={proceedLogin}
+          username={username}
+          password={password}
+          setUsername={setUsername}
+          setPassword={setPassword}
+          handleShowRegister={handleShowRegister}
+          setShowLogin={setShowLogin}
+        />
+        {showRegister && <Register setShowRegister={setShowRegister} />}
       </header>
     </>
   );

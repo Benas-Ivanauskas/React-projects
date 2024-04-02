@@ -132,12 +132,74 @@ nav {
   }
 }
 
+.register-form {
+  position: fixed;
+  width: 400px;
+  height: 330px;
+  background-color: rgb(255, 255, 255);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: 999;
+  border: 1px solid gray;
+
+  .register-header {
+    width: 100%;
+    height: 40px;
+    text-align: left;
+    background-color: rgb(245, 241, 241);
+    border-bottom: 1px solid rgb(214, 209, 209);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    h2 {
+      padding: 10px 20px;
+      font-size: $base-font-size * 1.5;
+      font-family: $base-font-family;
+      font-weight: $bold-font-weight;
+    }
+  }
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    gap: 7px;
+    input {
+      padding: 7px 15px;
+      border-radius: 5px;
+      border: 1px solid rgb(214, 209, 209);
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .register-btn {
+      width: 100px;
+      padding: 7px 10px;
+      border: none;
+      background-color: $button-background-color;
+      color: $white-color;
+      font-family: $base-font-family;
+      border-radius: 7px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+  }
+}
+
 .user-name {
   color: $white-color;
   font-size: $base-font-size * 1.5;
 }
 .error-message {
   color: red;
+}
+.turn-off-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  font-size: $base-font-size;
+  cursor: pointer;
 }
 
 .logout-btn {
