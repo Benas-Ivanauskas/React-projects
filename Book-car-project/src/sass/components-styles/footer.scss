@@ -156,3 +156,14 @@ footer {
     }
   }
 }
+
+@media all and (max-width: 550px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}

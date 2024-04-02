@@ -129,4 +129,15 @@ footer {
 .connect-container div ul a {
   color: #000000;
   font-size: 24px;
+}
+
+@media all and (max-width: 550px) {
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }/*# sourceMappingURL=footer.css.map */

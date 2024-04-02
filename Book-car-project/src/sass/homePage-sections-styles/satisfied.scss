@@ -71,6 +71,12 @@
     font-weight: $bold-font-weight;
     font-family: $base-font-family;
     line-height: 32px;
-    padding-top: 60px;
+    padding: 60px 15px 0px 15px;
+  }
+}
+
+@media all and (max-width: 800px) {
+  .satisfied-costumers {
+    gap: 20px;
   }
 }
