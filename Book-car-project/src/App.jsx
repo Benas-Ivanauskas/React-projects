@@ -2,6 +2,7 @@ import NavBar from "./Pages/components/NavBar";
 import Footer from "./Pages/components/Footer";
 import HomePage from "./Pages/HomePage";
 import CarListing from "./Pages/CarListing";
+import "react-toastify/dist/ReactToastify.css";
 import {
   BrowserRouter as Router,
   Routes,
@@ -11,6 +12,7 @@ import {
 import "./sass/normalized.css";
 import { useEffect, useState } from "react";
 import CurrentCarPage from "./Pages/CurrentCarPage";
+import { ToastContainer } from "react-toastify";
 
 export default function App() {
   const [cars, setCars] = useState([]);
@@ -30,6 +32,7 @@ export default function App() {
 
   return (
     <Router>
+      <ToastContainer />
       <NavBar />
       <Routes>
         <Route path="/" element={<Navigate to="/homepage" replace />} />
