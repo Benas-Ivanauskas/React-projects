@@ -5,6 +5,7 @@ import { FaPersonCirclePlus } from "react-icons/fa6";
 import { MdOutlineMiscellaneousServices } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { useEffect, useState } from "react";
+import BookingForm from "./components/BookingForm";
 
 function CurrentCarPage({ cars }) {
   const { id } = useParams();
@@ -76,34 +77,7 @@ function CurrentCarPage({ cars }) {
             </p>
             <p>${currentCar.cost} per day</p>
           </div>
-          <form action="">
-            <label htmlFor="pickUp">
-              Pick up Location
-              <select name="pickUp" id="pickUp">
-                <option value="Vilnius">Vilnius</option>
-                <option value="Kaunas">Kaunas</option>
-              </select>
-            </label>
-            <label htmlFor="pickDate">
-              From date
-              <input type="date" name="pickDate" />
-            </label>
-            <label htmlFor="toDate">
-              To date
-              <input type="date" name="toDate" />
-            </label>
-            <label htmlFor="message">
-              Message
-              <textarea
-                name="message"
-                id="message"
-                cols="20"
-                rows="5"
-                placeholder="Type your message"
-              ></textarea>
-            </label>
-            <button>Book</button>
-          </form>
+          <BookingForm />
         </div>
       </div>
     </div>

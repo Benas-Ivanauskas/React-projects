@@ -37,6 +37,7 @@ function Register({ setShowRegister }) {
   const handleClose = () => {
     setShowRegister(false);
   };
+
   return (
     <div>
       {successRegistration && (
