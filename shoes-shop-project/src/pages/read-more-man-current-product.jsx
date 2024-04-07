@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import manShoesShoppintProducts from "../data/productData";
 import "./read-more-current-product.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function ReadMoreManCurrentProduct({
   addToCart,

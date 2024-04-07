@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./navBar.css";
 import { Link } from "react-router-dom";
 
-export default function NavBar({ cartItems, cartItemCount }) {
+export default function NavBar({ cartItems, cartItemCount, setCartItems }) {
   // eslint-disable-next-line no-unused-vars
   const [showMenu, setShowMenu] = useState(true);
   const [showSideBar, setShowSideBar] = useState(false);
@@ -19,6 +19,14 @@ export default function NavBar({ cartItems, cartItemCount }) {
   function handleCloseShopCart() {
     setShowCart(false);
   }
+
+  const handleRemoveProduct = (id) => {
+    const removeProductFromCart = cartItems.filter(
+      (product) => product.id !== id
+    );
+    setCartItems(removeProductFromCart);
+  };
+
   return (
     <>
       <header>
@@ -75,14 +83,24 @@ export default function NavBar({ cartItems, cartItemCount }) {
           <div className="shopping-cart">
             <button onClick={handleCloseShopCart}>X</button>
             <h1>Shopping cart</h1>
-            <h2>Items in your cart:</h2>
-            <ul>
-              {cartItems.map((item, id) => (
-                <li key={id}>
-                  {item.title} - {item.price} Eur - Quantity: {item.quantity}
-                </li>
-              ))}
-            </ul>
+            {cartItems.length === 0 ? (
+              <p>Your cart is empty.</p>
+            ) : (
+              <>
+                <h2>Items in your cart:</h2>
+                <ul>
+                  {cartItems.map((item, id) => (
+                    <li key={id}>
+                      {item.title} - {item.price} Eur - Quantity:{" "}
+                      {item.quantity}
+                      <button onClick={() => handleRemoveProduct(item.id)}>
+                        Remove
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
           </div>
         )}
       </header>

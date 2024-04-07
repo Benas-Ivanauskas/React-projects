@@ -13,6 +13,7 @@ import "./sass/normalized.css";
 import { useEffect, useState } from "react";
 import CurrentCarPage from "./Pages/CurrentCarPage";
 import { ToastContainer } from "react-toastify";
+import NotFound from "./Pages/components/NotFound";
 
 export default function App() {
   const [cars, setCars] = useState([]);
@@ -42,6 +43,7 @@ export default function App() {
           path="/car-listing/car/:id"
           element={<CurrentCarPage cars={cars} />}
         />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

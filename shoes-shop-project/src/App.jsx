@@ -16,9 +16,22 @@ export default function App() {
   }
   const [cartItems, setCartItems] = useState([]);
   const [cartItemCount, setCartItemCount] = useState(0);
-  const addToCart = (product) => {
-    setCartItems([...cartItems, product]);
-  };
+
+  function addToCart(product) {
+    const existingProductIndex = cartItems.findIndex(
+      (item) => item.id === product.id
+    );
+
+    if (existingProductIndex !== -1) {
+      const updatedCartItems = [...cartItems];
+      updatedCartItems[existingProductIndex].quantity = product.quantity;
+      setCartItems(updatedCartItems);
+      setCartItemCount(cartItemCount + product.quantity);
+    } else {
+      setCartItems([...cartItems, product]);
+      setCartItemCount(cartItemCount + product.quantity);
+    }
+  }
 
   const updateCartItemCount = (newCount) => {
     setCartItemCount(newCount);
@@ -26,7 +39,11 @@ export default function App() {
 
   return (
     <>
-      <NavBar cartItems={cartItems} cartItemCount={cartItemCount} />
+      <NavBar
+        cartItems={cartItems}
+        cartItemCount={cartItemCount}
+        setCartItems={setCartItems}
+      />
       {show && <MainPage handleShow={handleShow} />}
       <Routes>
         <Route path="/mainpage" element={<MainPage />} />

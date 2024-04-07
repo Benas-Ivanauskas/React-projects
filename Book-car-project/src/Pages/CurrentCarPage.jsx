@@ -70,15 +70,7 @@ function CurrentCarPage({ cars }) {
             <p>{text}</p>
           </div>
         </div>
-        <div className="form-container">
-          <div>
-            <p>
-              <FaLocationDot /> {currentCar.location}
-            </p>
-            <p>${currentCar.cost} per day</p>
-          </div>
-          <BookingForm />
-        </div>
+        <BookingForm currentCar={currentCar} />
       </div>
     </div>
   );
