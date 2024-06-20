@@ -1,0 +1,178 @@
+{
+  "teaData": [
+    {
+      "id": 1,
+      "teaSpecies": "Black tea",
+      "country": "China",
+      "teaImage": "images/black-tea.png"
+    },
+    {
+      "id": 2,
+      "teaSpecies": "Green tea",
+      "country": "China",
+      "teaImage": "images/green-tea.png"
+    },
+    {
+      "id": 3,
+      "teaSpecies": "White tea",
+      "country": "China",
+      "teaImage": "images/white-tea.png"
+    },
+    {
+      "id": 4,
+      "teaSpecies": "Matcha tea",
+      "country": "China",
+      "teaImage": "images/MATCHA.png"
+    },
+    {
+      "id": 5,
+      "teaSpecies": "Chai tea",
+      "country": "India",
+      "teaImage": "images/chai-tea.png"
+    },
+    {
+      "id": 6,
+      "teaSpecies": "Herbal tea",
+      "country": "Morocco",
+      "teaImage": "images/herbal-tea.png"
+    }
+  ],
+
+  "teaFlavors": [
+    {
+      "id": 1,
+      "name": "Masala Chai tea",
+      "collectionType": "chai",
+      "country": "Hindi",
+      "image": "../images/chai-tea/masala.png",
+      "price": 4.85,
+      "grams": 50
+    },
+    {
+      "id": 2,
+      "name": "Vanilla Chai tea",
+      "collectionType": "chai",
+      "country": "Hindi",
+      "image": "../images/chai-tea/chai-vanilla.png",
+      "price": 3.95,
+      "grams": 50
+    },
+    {
+      "id": 3,
+      "name": "Ceylon Ginger Cinnamon Chai tea",
+      "collectionType": "chai",
+      "country": "Hindi",
+      "image": "../images/chai-tea/ceylong-ginger-cinamon.png",
+      "price": 6.95,
+      "grams": 50
+    },
+    {
+      "id": 4,
+      "name": "Earl grey black tea",
+      "collectionType": "black",
+      "country": "China",
+      "image": "../images/black-tea/darjeeling.png",
+      "price": 4.85,
+      "grams": 50
+    },
+    {
+      "id": 5,
+      "name": "Darjeeling black tea",
+      "collectionType": "black",
+      "country": "China",
+      "image": "../images/black-tea/earl-grey.png",
+      "price": 3.95,
+      "grams": 50
+    },
+    {
+      "id": 6,
+      "name": "English Breakfast black tea",
+      "collectionType": "black",
+      "country": "China",
+      "image": "../images/black-tea/english.png",
+      "price": 6.95,
+      "grams": 50
+    },
+    {
+      "id": 7,
+      "name": "Jasmine green tea",
+      "collectionType": "green",
+      "country": "Japan",
+      "image": "../images/green-tea/hojica.png",
+      "price": 4.85,
+      "grams": 50
+    },
+    {
+      "id": 8,
+      "name": "Genmaicha green tea",
+      "collectionType": "green",
+      "country": "Japan",
+      "image": "../images/green-tea/genmaicha.png",
+      "price": 3.95,
+      "grams": 50
+    },
+    {
+      "id": 9,
+      "name": "Hojica green tea",
+      "collectionType": "green",
+      "country": "Japan",
+      "image": "../images/green-tea/jasmine.png",
+      "price": 6.95,
+      "grams": 50
+    },
+    {
+      "id": 10,
+      "name": "Peach white tea",
+      "collectionType": "white",
+      "country": "India",
+      "image": "../images/chai-tea/masala.png",
+      "price": 4.85,
+      "grams": 50
+    },
+    {
+      "id": 11,
+      "name": "Berry white tea",
+      "collectionType": "white",
+      "country": "India",
+      "image": "../images/chai-tea/chai-vanilla.png",
+      "price": 3.95,
+      "grams": 50
+    },
+    {
+      "id": 12,
+      "name": "Coconute white tea",
+      "collectionType": "white",
+      "country": "India",
+      "image": "../images/chai-tea/ceylong-ginger-cinamon.png",
+      "price": 6.95,
+      "grams": 50
+    },
+    {
+      "id": 13,
+      "name": "Vanilla Matcha tea",
+      "collectionType": "matcha",
+      "country": "Japan",
+      "image": "../images/chai-tea/masala.png",
+      "price": 4.85,
+      "grams": 50
+    },
+    {
+      "id": 14,
+      "name": "Mint Matcha tea",
+      "collectionType": "matcha",
+      "country": "Japan",
+      "image": "../images/chai-tea/chai-vanilla.png",
+      "price": 3.95,
+      "grams": 50
+    },
+    {
+      "id": 15,
+      "name": "Chocolate Matcha tea",
+      "collectionType": "matcha",
+      "country": "Japan",
+      "image": "../images/chai-tea/ceylong-ginger-cinamon.png",
+      "price": 6.95,
+      "grams": 50
+    }
+  ]
+}
