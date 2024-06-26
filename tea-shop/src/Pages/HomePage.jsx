@@ -1,18 +1,15 @@
 import HomeLandingSection from "../Components/Home-page-components/HomeLandingSection";
-import HomeTeaCollection from "../Components/Home-page-components/HomeTeaCollection";
+import HomeTeaCollection from "../Components/Home-page-components/HomeTeaCollections/HomeTeaCollection";
 import HomeWholeSalersSection from "../Components/Home-page-components/HomeWholeSalersSection";
-import LastBlogsArticle from "../Components/Home-page-components/LastBlogsArticle";
-import LearnMoreBanner from "../Components/Home-page-components/LearnMoreBanner";
-import TeaCollectionProvider from "../context/TeaDataContext";
+import LastBlogsArticle from "../Components/Home-page-components/LastBlogs/LastBlogsArticle";
+import LearnMoreSection from "../Components/Home-page-components/LearnMore/LearnMoreSection";
 
 function HomePage() {
   return (
     <div>
       <HomeLandingSection />
-      <LearnMoreBanner />
-      <TeaCollectionProvider>
-        <HomeTeaCollection />
-      </TeaCollectionProvider>
+      <LearnMoreSection />
+      <HomeTeaCollection />
       <LastBlogsArticle />
       <HomeWholeSalersSection />
     </div>

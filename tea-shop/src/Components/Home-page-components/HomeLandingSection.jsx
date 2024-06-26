@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import Button from "../Buttons-components/Button";
+import LinkButton from "../Buttons-components/LinkButton";
 
 function HomeLandingSection() {
   return (
@@ -16,18 +15,17 @@ function HomeLandingSection() {
               Every day is unique, just like our tea
             </h1>
             <p className="text-sm lg:text-base w-5/6 mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-              maiores excepturi provident, odio ex atque id cumque autem beatae
-              sint.
+              Experience the richness of flavors and the warmth of tradition
+              with each sip. Our teas are crafted to provide a unique journey,
+              inviting you to explore and savor the moment.
             </p>
             <p className="text-base w-5/6 mb-4">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab ut
-              quibusdam quia repellat unde suscipit id nulla facere veniam
-              obcaecati.
+              Whether you seek the serenity of a quiet afternoon or the
+              invigorating start to your day, our collection has something
+              special to offer. Join us in celebrating the art of tea, where
+              every cup tells a story.
             </p>
-            <Link to="/products">
-              <Button className="mb-5">Browse teas</Button>
-            </Link>
+            <LinkButton to="/products" text="Browse teas" />
           </div>
         </div>
       </div>

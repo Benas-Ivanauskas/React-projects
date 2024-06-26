@@ -22,12 +22,10 @@ function CheckOutPage() {
         <div className="w-full flex flex-wrap justify-center my-14 ">
           <div className="flex  flex-col w-[400px] sm:w-[500px] mb-10 p-5">
             {cartItems.map((item, index) => (
-              <div key={index} className="flex mb-3 justify-between">
-                <CheckoutInfo key={index} item={item} />
-              </div>
+              <CheckoutInfo key={index} item={item} />
             ))}
             <Link to="/products">
-              <CustomButton className="w-full">BACK TO SHOPPING</CustomButton>
+              <CustomButton className="w-full" text="Back to shopping" />
             </Link>
           </div>
           <div className="flex flex-col items-center ms-0 lg:ms-12">

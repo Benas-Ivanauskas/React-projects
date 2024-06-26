@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 function Button({ children, className, onClick }) {
   return (
     <button

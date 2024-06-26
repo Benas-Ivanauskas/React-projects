@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 function BtnIncDec({ children, onClick }) {
   return (
     <button onClick={onClick} className={"text-2xl xl:text-4xl cursor-pointer"}>

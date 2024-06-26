@@ -6,7 +6,7 @@ function CheckoutEmpty() {
     <div className="checkout w-full flex flex-col items-center justify-center my-14 ">
       <p className="mb-5 text-3xl">Your cart is empty.</p>
       <Link to="/products">
-        <CustomButton className="w-full">BACK TO SHOPPING</CustomButton>
+        <CustomButton className="w-full" text="BACK TO SHOPPING" />
       </Link>
     </div>
   );

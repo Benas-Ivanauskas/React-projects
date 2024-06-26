@@ -2,7 +2,7 @@ import TeaProducts from "../Components/Products-page-components/TeaProducts";
 
 function ProductsPage() {
   return (
-    <div>
+    <div className="min-h-[609px]">
       <img
         className="w-full h-[400px] object-cover"
         src="images/banner-image.png"

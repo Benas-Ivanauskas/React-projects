@@ -5,7 +5,7 @@ import TeaInstruction from "../Components/Current-produtct-page/TeaInstruction";
 function CurrentProductDetails() {
   const { id } = useParams();
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto min-h-[609px]">
       <ProductInformation id={id} />
       <TeaInstruction />
     </div>

@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 function CartTotal() {
   const cartItems = useSelector((state) => state.cart.cart);
 
-  // Calculate Subtotal
   const totalPrice = cartItems.reduce((total, item) => {
     return total + item.totalPrice;
   }, 0);
