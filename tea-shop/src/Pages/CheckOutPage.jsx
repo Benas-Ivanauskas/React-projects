@@ -1,42 +1,67 @@
-import OrderSummary from "../Components/Checkout-page-components/OrderSummary";
-import PaymentType from "../Components/Checkout-page-components/PaymentType";
-import DeliveryAndRetour from "../Components/Checkout-page-components/DeliveryAndRetour";
-import CustomButton from "../Components/Buttons-components/CustomButton";
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
-
-import CheckoutEmpty from "../Components/Checkout-page-components/CheckoutEmpty";
-import "./Checkout.css";
-import CheckoutInfo from "../Components/Checkout-page-components/CheckoutInfo";
+import { useState } from "react";
+import CheckOut from "../Components/Checkout-page-components/CheckOut";
+import CheckOutDelivery from "../Components/Checkout-page-components/CheckOutDelivery";
+import CheckoutPayment from "../Components/Checkout-page-components/CheckoutPayment";
+import "./CheckOutPage.css";
 
 function CheckOutPage() {
-  const cartItems = useSelector((state) => state.cart.cart);
+  const [currentIndex, setCurrentIndex] = useState(1);
 
-  const totalPrice = cartItems.reduce((total, item) => {
-    return total + item.totalPrice;
-  }, 0);
+  const handleNext = () => {
+    if (currentIndex >= 3) {
+      return currentIndex;
+    }
+    setCurrentIndex((prevIndex) => prevIndex + 1);
+  };
+
+  const handleBack = () => {
+    if (currentIndex <= 1) {
+      return currentIndex;
+    }
+    setCurrentIndex((prevIndex) => prevIndex - 1);
+  };
+
+  const displayComponent = (index) => {
+    const component = progressCheckoutBar[index - 1].component;
+    return component;
+  };
+
+  const progressCheckoutBar = [
+    {
+      checkout: "1. My bag",
+      id: 1,
+      component: <CheckOut onNext={handleNext} />,
+    },
+    {
+      checkout: "2. Delivery",
+      id: 2,
+      component: <CheckOutDelivery onNext={handleNext} />,
+    },
+    {
+      checkout: "3. Payment",
+      id: 3,
+      component: <CheckoutPayment onBack={handleBack} />,
+    },
+  ];
 
   return (
     <>
-      {cartItems.length > 0 ? (
-        <div className="w-full flex flex-wrap justify-center my-14 ">
-          <div className="flex  flex-col w-[400px] sm:w-[500px] mb-10 p-5">
-            {cartItems.map((item, index) => (
-              <CheckoutInfo key={index} item={item} />
-            ))}
-            <Link to="/products">
-              <CustomButton className="w-full" text="Back to shopping" />
-            </Link>
-          </div>
-          <div className="flex flex-col items-center ms-0 lg:ms-12">
-            <OrderSummary totalPrice={totalPrice} />
-            <PaymentType />
-            <DeliveryAndRetour />
-          </div>
-        </div>
-      ) : (
-        <CheckoutEmpty />
-      )}
+      <div className="w-full flex justify-evenly">
+        {progressCheckoutBar.map((tea, index) => {
+          return (
+            <div
+              key={tea.id}
+              className={`flex text-xl uppercase ${
+                currentIndex === index + 1 ? "active" : ""
+              }`}
+            >
+              {tea.checkout}
+            </div>
+          );
+        })}
+      </div>
+
+      <div>{displayComponent(currentIndex)}</div>
     </>
   );
 }

@@ -1,9 +1,10 @@
 function OrderSummaryDeliveryPrice() {
+  const deliveryPrice = 3.95;
   return (
     <>
       <span>Delivery</span>
       <span>
-        <strong>3.95€</strong>
+        <strong>{deliveryPrice}€</strong>
       </span>
     </>
   );

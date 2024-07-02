@@ -3,7 +3,7 @@ export default function OrderSummarySubtotalPrice({ totalPrice }) {
     <>
       <span>Subtotal</span>
       <span>
-        <strong>{totalPrice.toFixed(2)}€</strong>
+        <strong>{totalPrice}€</strong>
       </span>
     </>
   );

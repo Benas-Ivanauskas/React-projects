@@ -6,6 +6,7 @@ import ProductsPage from "./Pages/ProductsPage";
 import CurrentProductDetails from "./Pages/CurrentProductDetails";
 import { ToastContainer } from "react-toastify";
 import CheckOutPage from "./Pages/CheckOutPage";
+import OrderSuccesfullyPage from "./Pages/OrderSuccesfullyPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             element={<CurrentProductDetails />}
           />
           <Route path="/checkout" element={<CheckOutPage />} />
+          <Route path="/completed-order" element={<OrderSuccesfullyPage />} />
         </Routes>
         <Footer />
         <ToastContainer />
